@@ -18,6 +18,7 @@ to view remote url => git config --get remote.origin.url
 
 git push <remote_name> <branch_name> => push to remote
 
+git merge <branch_name> => merge branch
 
 
 

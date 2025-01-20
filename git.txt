@@ -10,11 +10,13 @@ configuration => user name and email
     email => git config --global user.email "sample@gmail.com"
     name => git config --global user.name "sample"
 
-git remote add origin <remote_url>  eg: https://github.com/mern-trainer/sahil-batch.git
+git remote add <remote_name> <remote_url>  Eg: git remote add origin https://github.com/mern-trainer/sahil-batch.git
 git add . => add all files
 git commit -m "message" => commit all files
 
 to view remote url => git config --get remote.origin.url
+
+git push <remote_name> <branch_name> => push to remote
 
 
 

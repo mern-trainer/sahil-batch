@@ -1,11 +1,22 @@
-// vs code => visual studio code => install from google
-// github account => github.com => signup
-// git => version control system [download from https://git-scm.com/] -> Standalone Installer
+vs code => visual studio code => install from google
+github account => github.com => signup
+git => version control system [download from https:it-scm.com/] -> Standalone Installer
 
-// git commands
+git commands
 
-// git init => initialize git
-// git add . => add all files
-// git commit -m "message" => commit all files
+git init => initialize git
+
+configuration => user name and email
+    email => git config --global user.email "sample@gmail.com"
+    name => git config --global user.name "sample"
+
+git add . => add all files
+git commit -m "message" => commit all files
+
+
+
+
+
+
 
 

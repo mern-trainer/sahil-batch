@@ -1,0 +1,11 @@
+// vs code => visual studio code => install from google
+// github account => github.com => signup
+// git => version control system [download from https://git-scm.com/] -> Standalone Installer
+
+// git commands
+
+// git init => initialize git
+// git add . => add all files
+// git commit -m "message" => commit all files
+
+

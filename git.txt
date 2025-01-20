@@ -26,6 +26,8 @@ git checkout <branch_name> => switch to branch
 
 git checkout -b <branch_name> => create and switch to branch
 
+git merge <branch_name> => merge branch
+
 
 
 

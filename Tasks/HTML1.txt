@@ -1,0 +1,11 @@
+1. Create a gallery application
+
+-> Heading
+-> Paragraph
+-> Images with 1:1 aspect ratio
+
+2. News Paper
+
+-> Main Heading
+-> Sub headings
+-> Detailed Paragraph

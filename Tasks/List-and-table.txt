@@ -1,0 +1,22 @@
+1. Create Question paper with 10 questions about HTML.
+    Questions, Options and Answer.
+    Example:
+        1. What is HTML?
+            i. Hypertext Markup Language
+            ii. Hypertext Manipulation Language
+            iii. Hyper Manipulation Language
+            iv. Hyper Markup Language
+
+                A. Hypertext Markup Language
+
+2. Create a college table with the following details.
+    -> Name, Roll No, Marks, Percentage
+
+3. Create a worksheet of employees with the following details.
+    -> Date, Day, Work, Remarks
+    -> Take full row if the employee is on leave.
+    -> Take multiple rows if the employee done multiple works in a day.
+
+4. Create a description list for the following details.
+    -> HTML, CSS, JAVASCRIPT, REACTJS, PYTHON
+

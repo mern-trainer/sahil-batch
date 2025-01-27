@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <style>
+        /* selectors */
+        /* 
+            1. Universal Selector => *
+            2. Element Selector => tag name
+            3. Class Selector => .class-name
+            4. ID Selector => #id-name
+            5. Group Selector => tag-name, tag-name
+            6. Combinator Selector => tag-name tag-name
+        */
+        *{
+            color: red;
+            background-color: black;
+            margin: 0;
+        }
+        body{
+            padding: 20px;
+        }
+        h1{
+            color: green;
+        }
+        .demo1{
+            color: blue;
+        }
+        #demo2{
+            color: yellow;
+        }
+        .demo2, .demo3{
+            background-color: gray;
+        }
+        .demo3{
+            color: black;
+        }
+        p{
+            color: red;
+        }
+        .container p{
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <!-- CSS => Cascading Style Sheet -->
@@ -16,6 +56,15 @@
             hex code
             rgb 
         -->
-        <h1 style="color: #c2f00b; margin-bottom: 30px; margin-top: 0; border: 3px groove red; background-color: black; padding-inline: 20px; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga ea est laboriosam iusto et maxime harum. Nobis necessitatibus ipsam quaerat! Vel totam non corporis vero, assumenda tempore ipsa omnis.</h1>
+        <div class="container">
+            <p>Hello World</p>
+        </div>
+        <div>
+            <p>Hey World</p>
+        </div>
+        <h1 class="demo1" id="demo1">Hello</h1>
+        <h1 class="demo2" id="demo2">Hi</h1>
+        <h1 class="demo1" id="demo3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga ea est laboriosam iusto et maxime harum. Nobis necessitatibus ipsam quaerat! Vel totam non corporis vero, assumenda tempore ipsa omnis.</h1>
+        <h1 class="demo3" id="demo4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga ea est laboriosam iusto et maxime harum. Nobis necessitatibus ipsam quaerat! Vel totam non corporis vero, assumenda tempore ipsa omnis.</h1>
 </body>
 </html>

@@ -65,3 +65,27 @@
     scale: 2;
     rotate: -10deg;
 }
+
+/* Animation */
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes animation{
+    from{
+        left: 0px;
+        background-color: red;
+    }
+    to{
+        left: 40%;
+        background-color: green;
+    }
+}

@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+/* Media Queries => To apply different styles for different screen sizes  */
+
+/* 
+
+    Break Points
+
+    -> sm => <576px
+    -> md => <768px
+    -> lg => <992px
+    -> xl => <1200px
+    -> xxl => <1400px
+
+*/
+
+@media screen and (min-width: 576px) {
+    .container div{
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        flex-direction: row;
+    }
+    .container div{
+        background-color: yellow;
+    }
+}

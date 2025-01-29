@@ -1,49 +1,67 @@
+*{
+    margin: 0;
+}
+
 .container{
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 10px; 
+    flex-wrap: wrap;  
 }
 
-.container div{
-    width: 100px;
-    height: 100px;
-    background-color: green;
+.container img{
+    width: 100%;
+    transition: 0.7s;
 }
 
-/* Media Queries => To apply different styles for different screen sizes  */
-
-/* 
-
-    Break Points
-
-    -> sm => <576px
-    -> md => <768px
-    -> lg => <992px
-    -> xl => <1200px
-    -> xxl => <1400px
-
-*/
-
-@media screen and (min-width: 576px) {
-    .container div{
-        background-color: red;
-    }
+.container .image-div{
+    overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.header ul{
+    list-style: none;
+    display: none;
+}
+
+@media screen and (min-width: 430px){
     .container{
-        flex-direction: column;
+        justify-content: center;
     }
-    .container div{
-        background-color: blue;
+    .container img{
+        width: 210px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .container{
-        flex-direction: row;
+.menu{
+    display: inline;
+}
+.large{
+    display: none;
+}
+
+@media screen and (min-width: 576px){
+    .menu{
+        display: none;
     }
-    .container div{
-        background-color: yellow;
+    .large{
+        display: inline;
     }
+    .header ul{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* psudo class */
+/* :<class> */
+
+.container img:hover{
+    scale: 2;
+    rotate: -10deg;
 }

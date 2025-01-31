@@ -2,90 +2,98 @@
     margin: 0;
 }
 
-.container{
-    display: flex;
-    gap: 10px; 
-    flex-wrap: wrap;  
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container img{
-    width: 100%;
-    transition: 0.7s;
-}
-
-.container .image-div{
-    overflow: hidden;
-}
-
-.header{
+header{
     display: flex;
     justify-content: space-between;
+    padding-inline: 20px;
     height: 60px;
     align-items: center;
 }
 
-.header ul{
-    list-style: none;
-    display: none;
-}
-
-@media screen and (min-width: 430px){
-    .container{
-        justify-content: center;
-    }
-    .container img{
-        width: 210px;
-    }
+.logo{
+    width: 100px;
 }
 
 .menu{
-    display: inline;
-}
-.large{
-    display: none;
-}
-
-@media screen and (min-width: 576px){
-    .menu{
-        display: none;
-    }
-    .large{
-        display: inline;
-    }
-    .header ul{
-        display: flex;
-        gap: 20px;
-    }
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* psudo class */
-/* :<class> */
-
-.container img:hover{
-    scale: 2;
-    rotate: -10deg;
+.signin{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
 }
 
-/* Animation */
+.signin:hover{
+    background-color: rgb(228, 228, 228);
+}
 
-.animation{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: animation;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+.right-section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.learn-more{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
     position: relative;
 }
 
-@keyframes animation{
-    from{
-        left: 0px;
-        background-color: red;
-    }
-    to{
-        left: 40%;
-        background-color: green;
-    }
+.hero-video{
+    width: 100%;
+}
+
+.hero-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    color: white;
+    line-height: 2.3;
+}
+
+.hero-title{
+    font-weight: bold;
+}
+
+.hero-description{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero-content button{
+    padding: 10px;
+    border: none;
+}
+
+.hero-content button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+.scrollable{
+    overflow: scroll;
+    display: flex;
+    gap: 20px;
+}
+
+.scrollable img{
+    width: 200px;
+    height: 200px;
 }

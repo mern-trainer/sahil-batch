@@ -1,0 +1,21 @@
+div{
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    animation-name: slide;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide{
+    from{
+        top: 0;
+    }
+    to{
+        top: 40px;
+        border-radius: 30px;
+        background-color: red;
+    }
+}

@@ -1,18 +1,20 @@
-div{
+.loader{
     height: 6px;
     width: 6px;
-    border: 1px solid gray;
-    animation: loading 1s linear infinite;
+    background-color: red;
     border-radius: 6px;
-    border-bottom-color: white;
-    border-top-color: white;
+    position: relative;
+    animation: bounce 3s linear infinite;
 }
 
-@keyframes loading{
-    from{
-        transform: rotate(0deg);
+@keyframes bounce{
+    0%,50%,100%{
+        top: 0;
     }
-    to{
-        transform: rotate(360deg);
+    25%{
+        top: -4px;
+    }
+    75%{
+        top: 4px
     }
 }

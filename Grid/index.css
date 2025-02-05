@@ -18,3 +18,18 @@
         top: 4px
     }
 }
+
+/* Gradient */
+
+body{
+    background-image: linear-gradient(to right, gray, white);
+}
+
+.gr{
+    height: 50px;
+    /* background-image: linear-gradient(to bottom left, black 20%, brown, red, orange, yellow, white); */
+    /* background-image: radial-gradient(black 20%, brown, red, orange, yellow, white); */
+    width: 50px;
+    border-radius: 50px;
+}
+

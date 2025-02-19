@@ -1,0 +1,5 @@
+1. Write a function to find the given number is Odd or Even.
+2. Write a function to find the given number is Prime or Not.
+3. Write a fnuciton to find the given  is palindrome or Not.
+4. write a funciton to find the factorial of the given number.
+5. Write a function t find the given number is Armstrong or Not.

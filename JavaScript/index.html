@@ -106,6 +106,35 @@
                     console.log("Invalid");
                     break;
             }
+
+            // Loop -> a statement that allows us to execute a set of statements multiple times
+
+            // for -> used to iterate over a block of code a fixed number of times
+
+            let sum = 0
+            for(let idx=1; idx<=10; idx++){
+                if(idx % 2 == 0){
+                    break;
+                }
+                console.log(idx);
+            }
+
+            console.log(sum);
+            // while -> used to iterate over a block of code as long as a condition is true
+            
+            let i = 0
+
+            while(i < 10){
+                console.log("Hello");
+                i++
+            } // entry controlled loop
+            
+            // do while -> used to iterate over a block of code at least once, and continue to iterate as long as a condition is true
+        
+            do{
+                console.log("Hello");
+                i++
+            }while(i < 10) // exit controlled loop
         </script>
 </body>
 </html>

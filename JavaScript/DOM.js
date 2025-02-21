@@ -52,6 +52,7 @@
 const error = document.getElementsByClassName("error")
 
 function handleSubmit() {
+    
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
     
@@ -59,7 +60,7 @@ function handleSubmit() {
         error[0].innerHTML = "Username is required"
         return false
     }
-    if (username.length < 4 || username.length > 12) { // || && != -> logical operators
+    if (username.length < 4 || username.length > 12) { 
         error[0].innerHTML = "Username must be between 4 and 12 characters"
         return false
     }
@@ -71,5 +72,7 @@ function handleSubmit() {
         error[1].innerHTML = "Password must be between 8 and 16 characters"
         return false
     }
+    error[0].innerHTML = ""
+    error[1].innerHTML = ""
     return false
 }

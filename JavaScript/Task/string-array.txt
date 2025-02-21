@@ -1,0 +1,8 @@
+1. Sum of array elements.
+2. Average of array elements.
+3. Largest element of array.
+4. Smallest element of array.
+5. Second largest element of array.
+6. Second smallest element of array.
+7. Remove even numbers from array.
+8. Hide mobile number using slice => +918987654321 to +9189******21

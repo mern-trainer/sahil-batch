@@ -1,78 +1,59 @@
-// // DOM -> Document Object Model -> Programming interface to access and manipulate the content, structure, style and manage events of documents.
+// DOM -> Document Object Model -> Programming interface for web documents
+// DOM is used to access the HTML elements, manipulate the HTML elements, change the style of the HTML elements and handle events.
 
-// // getElementById("<id>"), getElementByClassName("<class>"), getElementsByTagName("<tag>")
+// DOM Methods
 
-// const element = document.getElementById("first")
+// getElementById()
+// getElementsByClassName()
+// getElementsByTagName()
+// querySelector()
+// querySelectorAll()
 
-// console.log(element);
+const element = document.getElementById("demo1")
 
-// element.innerHTML = "<b>This is new text</b>"
+console.log(element.innerText);
 
-// element.style.color = "red"
-// element.style.backgroundColor = "black"
-// element.style.fontSize = "30px"
-// element.style.padding = "20px"
+element.innerHTML = "<b>Hello</b>"
 
-// const elements = document.getElementsByClassName("demo")
+element.style.color = "rgba(210, 6, 9, 0.3)"
+element.style.fontSize = "30px"
 
-// elements[1].innerHTML = "Hi"
+const elements = document.getElementsByClassName("class-1")
 
-// elements[1].style.color = "red"
-// elements[1].style.backgroundColor = "black"
-// elements[1].style.fontSize = "30px"
-// elements[1].style.padding = "20px"
-// elements[1].style.marginTop = "20px"
+console.log(elements);
 
-// console.log(elements);
+console.log(elements[0].innerHTML);
 
-// const elems = document.getElementsByTagName("div")
+elements[0].innerText = "<b>Hello</b>"
+const style = elements[1].style
+style.color = "rgba(210, 6, 9, 0.3)"
+style.fontSize = "30px"
+style.backgroundColor = "rgba(210, 6, 9, 0.3)"
+style.padding = "20px"
 
-// elems[1].innerHTML = "Hi"
+const elems = document.getElementsByTagName("div")
 
-// elems[1].style.color = "green"
-// elems[1].style.backgroundColor = "black"
-// elems[1].style.fontSize = "30px"
-// elems[1].style.padding = "20px"
-// elems[1].style.marginTop = "50px"
+console.log(elems);
 
-// console.log(elems);
+elems[3].innerHTML = "<b>Hello</b>"
 
-// const elem = document.querySelector(".demo") // first match - single match
-// // same methods and properties as getElementById
+const styles = elems[3].style
+styles.color = "rgba(210, 6, 9, 0.3)"
+styles.fontSize = "30px"
+styles.backgroundColor = "rgba(210, 6, 9, 0.3)"
+styles.padding = "20px"
 
-// elem.innerHTML = "Hello World"
+// querySelector()
+// querySelectorAll()
 
-// elem.style.color = "blue"
+const elms = document.querySelector(".class-1") // single element -> same methods as getElementById()
 
-// const elems2 = document.querySelectorAll("div") // all matches - multiple matches
-// // same as getElementByTagName or getelementsByClassName
+console.log(elms);
 
-// console.log(elems2);
+const elemss = document.querySelectorAll(".class-1") // multiple elements -> same methods as getElementsByClassName() / getElementsByTagName()
 
-const error = document.getElementsByClassName("error")
+console.log(elemss);
 
-function handleSubmit() {
-    
-    const username = document.getElementById("username").value
-    const password = document.getElementById("password").value
-    
-    if (username == "") {
-        error[0].innerHTML = "Username is required"
-        return false
-    }
-    if (username.length < 4 || username.length > 12) { 
-        error[0].innerHTML = "Username must be between 4 and 12 characters"
-        return false
-    }
-    if (password == "") {
-        error[1].innerHTML = "Password is required"
-        return false
-    }
-    if (password.length < 8 || password.length > 16) {
-        error[1].innerHTML = "Password must be between 8 and 16 characters"
-        return false
-    }
-    error[0].innerHTML = ""
-    error[1].innerHTML = ""
-    return false
-}
+// Form Validation
+
+

@@ -27,4 +27,4 @@
 //                 repeatedly executes the block of code as long as a certain
 //                 condition is true.
 
-// 10 times.
+// 5 times.

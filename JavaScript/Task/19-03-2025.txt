@@ -1,0 +1,5 @@
+1. Create a user information and memoize it.
+2. Create a funciton to find wheather the given number is palindrome or not. and memoze the result.
+3. Create a funciton to find the factorial of the given number. And memoize the result.
+4. Create a funciton to find wheather the given number is prime number or not, And memoize the result.
+5. Create a function to find the sum of N numbers and memoize the result

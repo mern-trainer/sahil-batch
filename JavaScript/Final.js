@@ -80,3 +80,9 @@ class Toyota extends Vehicle{
 const veh = new Toyota("Toyota", "Camry", 2022)
 
 console.log(veh.parentDisplay());
+
+// hoisting -> we can access the variable before initialization
+
+console.log(a);
+
+var a;

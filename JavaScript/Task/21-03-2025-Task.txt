@@ -1,0 +1,8 @@
+1. Find the factorial of N numbers using recursion
+2. Calculate a sum of all numbers in an array
+3. Find the number is prime or not using recursion
+4. Find the number is palindrome or not using recursion
+5. Find the number of digits in a given number using recursion
+6. Find the reverse of a given string using recursion
+7. Find the sum of all digits in a given number using recursion
+8. Find the number is armstrong or not using recursion
